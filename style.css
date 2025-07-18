@@ -6,13 +6,39 @@ body {
 }
 .container {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 h1 {
     color: #e75480;
     font-size: 2.8em;
     margin-bottom: 30px;
     text-shadow: 0 2px 8px #fff0f6;
+}
+.music-player {
+    margin: 10px auto 15px auto;
+}
+.lyrics-box {
+    margin: 0 auto 20px auto;
+    background: #fff5f8;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 22px 10px 22px;
+    box-shadow: 0 2px 8px #ffe6e6;
+    max-width: 400px;
+}
+.lyrics-box h2 {
+    color: #e75480;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+.lyrics-box pre {
+    font-size: 1em;
+    color: #6c3483;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 0;
+    background: none;
+    border: none;
 }
 p {
     font-size: 1.6em;
