@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to top right, #ffcccc, #ffe6f0, #f6d6ff);
+    font-family: 'Microsoft YaHei', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    padding-top: 80px;
+}
+h1 {
+    color: #e75480;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 8px #fff0f6;
+}
+p {
+    font-size: 1.6em;
+    color: #6c3483;
+    margin-bottom: 30px;
+}
+button {
+    background: #ffb6b9;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 18px 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 2px 6px #ffb6b9;
+    transition: background .2s;
+}
+button:hover {
+    background: #e75480;
+}
+.heart {
+    margin: 60px auto 0;
+    width: 120px;
+    height: 110px;
+    background: none;
+    position: relative;
+    animation: heartbeat 1.3s infinite;
+}
+.heart:before, .heart:after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 0;
+    width: 60px;
+    height: 100px;
+    background: #e75480;
+    border-radius: 60px 60px 0 0;
+    transform: rotate(-45deg);
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+}
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    10%, 30% { transform: scale(1.1); }
+    20% { transform: scale(1.2); }
+    40% { transform: scale(1.1); }
+    50%, 90% { transform: scale(1); }
+}
